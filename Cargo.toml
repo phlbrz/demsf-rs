@@ -12,6 +12,7 @@ description = """
 A rewrite of https://github.com/phlbrz/demsf - DEMSF are bash scripts to Download and extract Microsoft Sharepoint file.
 """
 categories = ["command-line-utilities","compression", "config", "development-tools"]
+keywords = ["microsoft", "sharepoint", "download", "extract"]
 autotests = false
 exclude = ["/.github/*"]
 rust-version = "1.71.1"
