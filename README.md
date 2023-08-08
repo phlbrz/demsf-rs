@@ -15,7 +15,7 @@ The current implementation utilizes some [crates](https://crates.io/) for downlo
 tree -I target demsf-rs/
 
 demsf-rs/
-├── Cargo.toml # libs from crates.io
+├── Cargo.toml # crate/libs from crates.io
 ├── LICENSE
 ├── README.md
 └── src
