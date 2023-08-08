@@ -6,8 +6,8 @@ These scripts are primarily intended for automation in CI pipelines or local set
 As the Sharepoint link I share is public and doesn't require authentication, the utility provides seamless access.  
 The current implementation utilizes some [crates](https://crates.io/) for downloading and Unzip for extraction, but if you prefer an alternative extractor, please don't hesitate to let me know by raising an issue.
 
-[![Build status](https://github.com/rust-lang/regex/workflows/ci/badge.svg)](https://github.com/phlbrz/demsf-rs/actions)
-[![Crates.io](https://img.shields.io/crates/v/regex.svg)](https://crates.io/crates/demsf-rs)
+[![Build status](https://github.com/phlbrz/demsf-rs/workflows/ci/badge.svg)](https://github.com/phlbrz/demsf-rs/actions)
+[![Crates.io](https://img.shields.io/crates/v/demsf-rs)](https://crates.io/crates/demsf-rs)
 
 ## Repository structure
 
