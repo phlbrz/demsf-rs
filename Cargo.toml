@@ -1,8 +1,8 @@
 [package]
 name = "demsf-rs"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
-authors = ["The Rust Project Developers", "Andrew Gallant <jamslam@gmail.com>"]
+authors = ["Felipe Campos <phl.brz.us@gmail.com>"]
 license = "GPL-3.0"
 readme = "README.md"
 repository = "https://github.com/phlbrz/demsf-rs"
