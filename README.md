@@ -60,8 +60,35 @@ cargo run -- "$OUTPUT_FOLDER" "$OUTPUT_FILENAME" "$URL" false
 
 ## How to use the crate
 
-```rust
+- To download a file from Microsoft Sharepoint, unzip **must** set to `false`.
+- To unzip a file from filesystem, unzip **must** set to `true`, or don't call download function.
 
+```rust
+use log::{debug, error};
+
+use demsf_rs::args::Args;
+use demsf_rs::download::download;
+use demsf_rs::unzip::unzip;
+
+fn main() {
+    env_logger::init();
+    match Args::parse_arguments() {
+        Err(why) => {
+            error!("Error");
+            panic!("{:?}", why)
+        }
+        Ok(mut value) => {
+            debug!("call download."); // if you don't want to download, comment this line.
+            download(&mut value); // if you don't want to download, comment this line.
+            debug!("call unzip? value={:#?}", &value.unzip); // if you want to unzip, set true
+            match &value.unzip.parse() {
+                Ok(true) => unzip(&value),
+                Ok(false) => (),
+                Err(_) => panic!("Only true or false is valid for unzip option."),
+            }
+        }
+    }
+}
 ```
 
 - Rust file `download.rs`: Download a Microsoft Sharepoint File
